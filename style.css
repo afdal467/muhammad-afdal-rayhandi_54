@@ -1,0 +1,138 @@
+/* ===========================
+   Global
+=========================== */
+body {
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===========================
+   Navbar
+=========================== */
+nav {
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+nav:hover {
+  background-color: #1d4ed8; /* biru lebih gelap */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+nav a {
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: white;
+  transition: width 0.3s ease-in-out;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* ===========================
+   Foto Profil
+=========================== */
+.profil-foto {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #60a5fa; /* biru-400 */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.profil-foto:hover {
+  transform: scale(1.1) rotate(2deg);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.35);
+}
+
+/* ===========================
+   Tabel Biodata
+=========================== */
+.tabel-biodata {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.tabel-biodata td {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 1rem;
+}
+
+.tabel-biodata tr:nth-child(even) {
+  background-color: #f0f9ff; /* biru sangat muda */
+}
+
+.tabel-biodata tr:hover td {
+  background-color: #3b82f6; /* biru-500 */
+  color: white;
+  cursor: pointer;
+}
+
+/* ===========================
+   Animasi Judul & Teks
+=========================== */
+h2, h3 {
+  position: relative;
+  animation: fadeDown 0.8s ease-in-out;
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+p {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ===========================
+   List Hobi
+=========================== */
+ul li {
+  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+ul li:hover {
+  transform: translateX(8px);
+  color: #2563eb; /* biru-600 */
+  font-weight: 600;
+}
+
+/* ===========================
+   Footer
+=========================== */
+footer {
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  background: linear-gradient(to right, #2563eb, #3b82f6); /* biru gradasi */
+  box-shadow: 0 -4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease-in-out;
+}
+
+footer:hover {
+  transform: scale(1.01);
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Profil Mahasiswa</title>
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-blue-100 to-purple-100 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-blue-600 text-white p-4 shadow-md fixed top-0 w-full z-10">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="font-bold text-xl">Web Pribadi</h1>
+      <div class="space-x-4">
+        <a href="index.html" class="hover:text-gray-200">Home</a>
+        <a href="about.html" class="hover:text-gray-200">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="text-center pt-24 pb-10">
+    <img src="184632.png" alt="Foto Mahasiswa" class="mx-auto rounded-full shadow-lg mb-4 border-4 border-blue-500">
+    <h2 class="text-3xl font-bold text-gray-800">Muhammad Afdal Rayhandi</h2>
+    <p class="text-gray-600">NPM: 2408007010054</p>
+  </section>
+
+  <!-- Tabel -->
+  <section class="max-w-3xl mx-auto p-6 bg-white shadow-lg rounded-2xl mt-6">
+    <h3 class="text-2xl font-bold mb-4 text-blue-600">📊 Tabel Data Nilai</h3>
+    <table class="table-auto w-full border-collapse border border-gray-300 text-center">
+      <thead class="bg-blue-200">
+        <tr>
+          <th class="border px-4 py-2">Mata Kuliah</th>
+          <th class="border px-4 py-2">Nilai</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="hover:bg-gray-100">
+          <td class="border px-4 py-2">Pemrograman Web</td>
+          <td class="border px-4 py-2 font-semibold">A</td>
+        </tr>
+        <tr class="hover:bg-gray-100">
+          <td class="border px-4 py-2">Basis Data</td>
+          <td class="border px-4 py-2 font-semibold">A-</td>
+        </tr>
+        <tr class="hover:bg-gray-100">
+          <td class="border px-4 py-2">Jaringan Komputer</td>
+          <td class="border px-4 py-2 font-semibold">B+</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white text-center py-4 mt-10">
+    &copy; 2025 Web Pribadi - Dibuat dengan TailwindCSS
+  </footer>
+</body>
+</html>
